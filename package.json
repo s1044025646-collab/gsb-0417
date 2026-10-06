@@ -1,0 +1,21 @@
+{
+  "name": "b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && node --test dist/test/rainflow.test.js dist/test/service.test.js",
+    "build": "tsc",
+    "start": "node dist/src/cli.js serve",
+    "demo": "node dist/src/cli.js demo",
+    "cli": "node dist/src/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
